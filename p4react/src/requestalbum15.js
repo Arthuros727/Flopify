@@ -27,16 +27,21 @@ function Request15() {
   const handleNextPage = () => {
     setCurrentPage(currentPage + 1);
   };
-
+  function cookied(i){
+    console.log(i);
+  }
   return (
     <div>
       <ul>
         {posts.map(post => (
-          <div className='homepage' key={post.id}>
+            <a href={`/detail?album=${post.id}`}>
+          <div className='homepage' id={post.id} >
             <img src={post.cover_small} alt={post.name} />
             <p>{post.name}</p>
             <p>Popularity: {post.popularity}/100</p>
           </div>
+
+            </a>
         ))}
       </ul>
 

@@ -5,6 +5,7 @@ import ColorSchemesExample from "./Navbar.js";
 import Request15 from "./requestalbum15.js";
 import Test from "./test.js";
 import App2 from "./app2.js";
+import Detail from "./detailedAlbum.js";
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
     <Routes>
     <Route path='/' element={< App2 />} />
     <Route path='/Album' element={< Test />}/>
+    <Route path='/detail' element={< Detail />}/>
+
 </Routes>
     
   );
