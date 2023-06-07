@@ -8,6 +8,17 @@
 }
 .homepage{
     text-align: center;
+    display: inline-block;
+    padding: 2vw;
+    margin: 1vw;
+}
+
+.btnPage{
+  text-align: center;
+}
+
+.homepage:hover{
+  background-color: gray;
 }
 
 @media (prefers-reduced-motion: no-preference) {
