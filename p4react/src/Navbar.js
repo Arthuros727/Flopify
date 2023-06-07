@@ -11,7 +11,7 @@ function ColorSchemesExample() {
         <Container>
           <Navbar.Brand href="#home">Flopify</Navbar.Brand>
           <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
           {/* <Link to="/">Home</Link> */}
             <Nav.Link href="/album">Album</Nav.Link>
             <Nav.Link href="#features">Genres</Nav.Link>

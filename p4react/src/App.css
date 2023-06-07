@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+#h2album{
+  text-align: center;
+}
+
 .homepage:hover{
   background-color: gray;
 }
