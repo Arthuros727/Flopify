@@ -14,7 +14,7 @@ function ColorSchemesExample() {
           <Nav.Link href="/">Home</Nav.Link>
           {/* <Link to="/">Home</Link> */}
             <Nav.Link href="/album">Album</Nav.Link>
-            <Nav.Link href="#features">Genres</Nav.Link>
+            <Nav.Link href="/genre">Genres</Nav.Link>
             <Nav.Link href="#pricing">Artiste</Nav.Link>
           </Nav>
         </Container>

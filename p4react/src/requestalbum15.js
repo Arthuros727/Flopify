@@ -23,6 +23,9 @@ function Request15() {
       setCurrentPage(currentPage - 1);
     }
   };
+  if (!currentPage) {
+    return <p>Loading...</p>;
+  }
 
   const handleNextPage = () => {
     setCurrentPage(currentPage + 1);
@@ -34,14 +37,14 @@ function Request15() {
     <div>
       <ul>
         {posts.map(post => (
-            <a href={`/detail?album=${post.id}`}>
-          <div className='homepage' id={post.id} >
-            <img src={post.cover_small} alt={post.name} />
-            <p>{post.name}</p>
-            <p>Popularity: {post.popularity}/100</p>
-          </div>
+              <a href={`/detail?album=${post.id}`}>
+            <div className='homepage' id={post.id} >
+              <img src={post.cover_small} alt={post.name} />
+              <p>{post.name}</p>
+              <p>Popularity: {post.popularity}/100</p>
+            </div>
 
-            </a>
+              </a>
         ))}
       </ul>
 
