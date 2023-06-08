@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import ColorSchemesExample from "./Navbar.js";
 
 function Genre() {
   const i = window.location.href.split('=')[1];
@@ -38,10 +39,13 @@ function Genre() {
       fetchAlbumDetails();
     }
   }, [albumIds]);
-
+  if (!albums) {
+    return <p>Loading...</p>;
+  }
   return (
     <div>
-      
+       <ColorSchemesExample /> 
+
       {genre && (
         <div>
           <h2>Genre</h2>

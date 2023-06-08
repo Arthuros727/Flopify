@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import ColorSchemesExample from "./Navbar.js";
 
 function Genre2() {
  
@@ -20,6 +21,8 @@ function Genre2() {
 
   return (
     <div>
+        <ColorSchemesExample />
+
       <ul>
         {posts.map(post => (
           <div>

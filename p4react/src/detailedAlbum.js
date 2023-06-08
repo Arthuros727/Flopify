@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import ColorSchemesExample from "./Navbar.js";
 
 function Detail() {
   const [album, setAlbum] = useState(null);
@@ -30,7 +31,8 @@ function Detail() {
   }
 
   return (
-    <div>
+      <div>
+        <ColorSchemesExample />
       <img src={album.cover_small} alt={album.name} />
       <p>{album.name}</p>
       <p>{album.description}</p>
