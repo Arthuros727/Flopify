@@ -52,8 +52,8 @@ function Test() {
         </ul>
   
         <div className='btnPage'>
-          <button onClick={handlePreviousPage}>BACK</button>
-          <button onClick={handleNextPage}>NEXT</button>
+          <button  onClick={handlePreviousPage}>BACK</button>
+          <button  onClick={handleNextPage}>NEXT</button>
         </div>
       </div>
     );

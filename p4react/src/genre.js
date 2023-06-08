@@ -25,10 +25,10 @@ function Genre2() {
 
       <ul>
         {posts.map(post => (
-          <div>
-        <a href={`/albumGenre?genre=${post.id}`}>
+          <div id='di'>
+        <a  href={`/albumGenre?genre=${post.id}`}>
 
-              <p>{post.name}</p>
+              <p className='gender'>{post.name}</p>
             </a>    
           </div>
             

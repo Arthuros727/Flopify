@@ -50,6 +50,7 @@ function Detail() {
 
       {selectedTrack && (
         <audio
+        id='audioPlayer'
           controls
           src={selectedTrack}
           className="audio"
