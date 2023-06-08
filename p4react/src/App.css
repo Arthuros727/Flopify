@@ -16,7 +16,7 @@
 }
 #audioPlayer {
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
   background-color: #282828;
@@ -129,6 +129,95 @@
   background-color: #ccc;
 }
 
+.line{
+  border: 0.1px solid rgb(176, 176, 176);
+  width: 93%;
+  position: absolute;
+  left: 2vw;
+  margin-top: 2vw;
+}
+
+.trackRow {
+  /* border-bottom: 1px solid black; */
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+
+  /* padding-bottom:10px ; */
+}
+
+
+.trackRow:hover > .line {
+  border: 0.1px solid rgb(113, 113, 113);
+}
+
+
+.trackName {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.trackPopularity {
+  margin-right: 10px;
+}
+
+.trackDuration {
+  margin-right: 10px;
+  text-align: center; /* Centrer le texte */
+}
+
+.trackBtn {
+  background-color: #f1f1f1;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.trackBtn:hover {
+  background-color: #ccc;
+}
+
+.albumContainer {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Colonne de la couverture de l'album puis colonne du contenu */
+  grid-column-gap: 10px; /* Espacement horizontal entre les colonnes */
+  align-items: center; /* Centrer verticalement */
+  margin-bottom: 10px;
+}
+
+.containers{
+  margin-bottom: 100px;
+}
+
+.albumCover {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.albumDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.albumName {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.albumDecs {
+  font-size: 14px;
+  color: #777;
+}
 
 
 

@@ -29,23 +29,42 @@ function Detail() {
   if (!album) {
     return <p>Loading...</p>;
   }
+        function minut(a){
+            const minutes = Math.floor(a / 60);
+            const seconds = a - minutes * 60;
 
+            return minutes + "min"  + seconds;
+
+        }
   return (
       <div>
         <ColorSchemesExample />
-      <img src={album.cover_small} alt={album.name} />
-      <p>{album.name}</p>
-      <p>{album.description}</p>
+        <div className="albumContainer">
+  <img className="albumCover" src={album.cover_small} alt={album.name} />
+  <div className="albumDetails">
+    <p className="albumName">{album.name}</p>
+    <p className="albumDecs">{album.description}</p>
+  </div>
+</div>
+
 
       <h3>Tracks</h3>
       <ul>
+          <div className='containers'>
         {tracks.map(track => (
-          <li key={track.id}>
-            <p>{track.name}</p>
-            <button type="button" onClick={() => change(track.mp3)}>PLAY</button>
-            <p>Duration: {track.duration} seconds</p>
-          </li>
-        ))}
+         <>
+
+     <div className="trackRow">
+  <p className="trackName">{track.name}</p>
+  <p className="trackDuration"> {minut(track.duration)}</p>
+  <button className="trackBtn" type="button" onClick={() => change(track.mp3)}>PLAY</button>
+  <div className='line'></div>
+</div>
+
+         </>
+          
+          ))}
+          </div>
       </ul>
 
       {selectedTrack && (
